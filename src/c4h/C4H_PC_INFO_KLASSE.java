@@ -552,7 +552,10 @@ public class C4H_PC_INFO_KLASSE {
 		list.add(getDNSServer());
 		
 		for (int i = 0; i < list.size(); i++) {
-			if(list.get(i).equalsIgnoreCase("Fehler-Netzwerk")||(list.get(i).equalsIgnoreCase("Fehler-MusterImage")||(list.get(i).equalsIgnoreCase("Fehler-Schulnummer")))) {
+			if(list.get(i).equalsIgnoreCase("Fehler-Netzwerk")
+					||(list.get(i).equalsIgnoreCase("Fehler-MusterImage")
+							||(list.get(i).equalsIgnoreCase("Fehler-Schulnummer")))) 
+			{
 				toolTipFehlerHinweisText=list.get(i).replaceAll("Fehler-", "");
 				System.out.println(toolTipFehlerHinweisText);
 				return false;

@@ -41,6 +41,7 @@ public class C4H_GUI_TRAY_ICON {
 	
 		if (!SystemTray.isSupported()) {
 			System.out.println("SystemTray is not supported");
+			
 			return;
 		}
 		trayIcon.setToolTip("Schul-Support-Service - Call for Help");

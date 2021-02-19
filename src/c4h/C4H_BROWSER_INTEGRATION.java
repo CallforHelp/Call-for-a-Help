@@ -18,6 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
+import javax.swing.border.BevelBorder;
 /**
  * Ein Webbrowser einfach in unse gui eingebunden.
  * @author  Helmi Bani 
@@ -64,13 +65,14 @@ public class C4H_BROWSER_INTEGRATION{
     private void initComponents() {
     	
     	jfxPanel = new JFXPanel();
-    	jfxPanel.setBounds(0, 0, 797, 648);
-    	jfxPanel.setBackground(new Color(220, 220, 220));
+    	jfxPanel.setBounds(0, 0, 787, 637);
+    	jfxPanel.setBackground(Color.GRAY);
+    	panel.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
     	
     	panel.setBackground(new Color(220, 220, 220));
     	panel.setLayout(null);
     	panel.setBounds(200, 40, 787, 670);
-    	progressBar.setBounds(0, 650, 787, 19);
+    	progressBar.setBounds(0, 636, 787, 34);
     	panel.add(progressBar);
 
     	progressBar.setPreferredSize(new Dimension(150, 18));
